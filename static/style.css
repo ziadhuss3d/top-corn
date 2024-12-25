@@ -2,12 +2,26 @@ body {
     font-family: Arial, sans-serif;
     background-color: white;
     color: black;
+    background-image: url("/static/1-pic.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main {
+    background-image: url("/static/1-pic.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-top: 100px;
 }
 
 header {
-    background-color: #f1f1f1;
-    padding: 20px;
-    text-align: center;
+    background-image: url("/static/2-pic.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 80px;
 }
 
 header nav ul {
