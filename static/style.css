@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: red;
+}
+
+/* دمج التنسيقات من 1-style.css */
+h1 {
+    text-align: center;
+    color: red;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    color: black;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-media a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: red;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1em;
+    color: gray;
+}
