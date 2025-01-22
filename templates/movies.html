@@ -5,6 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .movie-card {
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .movie-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .movie-card h3 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .movie-card p {
+            font-size: 0.9rem;
+            color: #555;
+            margin: 0 10px 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -19,19 +101,29 @@
 
     <main>
         <h1>Movies Page</h1>
-        <div class="rating">
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <p>Overall Rating: 8/10</p>
+        <p>Explore our collection of amazing movies!</p>
+        <div class="movie-grid">
+            <!-- Example Movie Card -->
+            <div class="movie-card">
+                <img src="https://via.placeholder.com/200x300" alt="Movie Poster">
+                <h3>Movie Title</h3>
+                <p>Genre: Action</p>
+                <p>Rating: 8/10</p>
+            </div>
+            <div class="movie-card">
+                <img src="https://via.placeholder.com/200x300" alt="Movie Poster">
+                <h3>Another Movie</h3>
+                <p>Genre: Drama</p>
+                <p>Rating: 7/10</p>
+            </div>
+            <div class="movie-grid">   
+            </div>
         </div>
-        <p>Here you can browse and review your favorite movies!</p>
     </main>
 
     <footer>
         <p>&copy; 2024 Top-Corn. All rights reserved.</p>
     </footer>
+    <script src="{{ url_for('static', filename='movies.js') }}" defer></script>
 </body>
 </html>
