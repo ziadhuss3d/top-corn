@@ -84,3 +84,32 @@ footer {
     font-size: 1em;
     color: gray;
 }
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5em;
+    color: gold;
+}
+
+.rating p {
+    margin: 0;
+    font-size: 1em;
+    color: black;
+}
+.star-rating {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.star {
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.star:hover {
+    color: gold;
+}

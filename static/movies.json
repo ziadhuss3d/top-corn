@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Inception",
+        "genre": "Sci-Fi",
+        "rating": "8/10",
+        "poster": "/static/inception.jpg"
+    },
+    {
+        "title": "The Dark Knight",
+        "genre": "Action",
+        "rating": "9/10",
+        "poster": "/static/dark_knight.jpg"
+    },
+    {
+        "title": "Interstellar",
+        "genre": "Sci-Fi",
+        "rating": "10/10",
+        "poster": "/static/interstellar.jpg"
+    },
+    {
+        "title": "The Prestige",
+        "genre": "Mystery",
+        "rating": "9/10",
+        "poster": "/static/prestige.jpg"
+    }
+]
